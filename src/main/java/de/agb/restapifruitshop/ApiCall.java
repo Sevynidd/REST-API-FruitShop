@@ -11,17 +11,15 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
 
 public class ApiCall {
-    protected void apiSetup() {
+    protected List<Product> apiSetup() {
         URL url = null;
         try {
             url = new URI("https://api.predic8.de/shop/v2/products?start=1&limit=100").toURL();
-        } catch (URISyntaxException URISyntaxEx) {
-            URISyntaxEx.printStackTrace();
-        } catch (MalformedURLException malURLEx) {
-            malURLEx.printStackTrace();
+        } catch (URISyntaxException | MalformedURLException SyntaxEx) {
+            SyntaxEx.printStackTrace();
         }
 
-        HttpURLConnection conn = null;
+        HttpURLConnection conn;
 
         try {
             assert url != null;
@@ -54,10 +52,13 @@ public class ApiCall {
                         System.out.println("id: " + product.id + " name: " + product.name + " self_link: " + product.self_link)
                 );
 
+                return listProducts;
+
             }
         } catch (IOException ioex) {
             ioex.printStackTrace();
         }
 
+        return null;
     }
 }
