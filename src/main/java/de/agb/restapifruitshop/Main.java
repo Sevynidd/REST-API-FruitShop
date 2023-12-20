@@ -32,9 +32,7 @@ public class Main extends Application {
 
     private void setupView() {
         ApiCall apiCall = new ApiCall();
-        List<Product> listProducts = apiCall.apiSetup();
-
-
+        List<Product> listProducts = apiCall.getApiInformation();
 
     }
 

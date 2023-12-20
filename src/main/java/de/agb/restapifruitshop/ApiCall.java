@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
 
 public class ApiCall {
-    protected List<Product> apiSetup() {
+    protected List<Product> getApiInformation() {
         URL url = null;
         try {
             url = new URI("https://api.predic8.de/shop/v2/products?start=1&limit=100").toURL();
@@ -49,7 +49,7 @@ public class ApiCall {
                 List<Product> listProducts = reader.readValue(jsonNode);
 
                 listProducts.forEach(product ->
-                        System.out.println("id: " + product.id + " name: " + product.name + " self_link: " + product.self_link)
+                        System.out.println("id: " + product.id + " name: " + product.name)
                 );
 
                 return listProducts;
