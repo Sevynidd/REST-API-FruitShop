@@ -1,14 +1,12 @@
-package de.agb.restapifruitshop;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectReader;
 
 import java.io.IOException;
 import java.net.*;
 import java.util.List;
 import java.util.Scanner;
-
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectReader;
 
 public class ApiCall {
     protected List<Product> getApiInformation() {
