@@ -10,8 +10,8 @@
     <orderEntry type="module-library">
       <library name="com.fasterxml.jackson">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/Libraries/jackson/jackson-core-2.16.1.jar!/" />
-          <root url="jar://$MODULE_DIR$/src/Libraries/jackson/jackson-databind-2.16.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/Libraries/com.fasterxml.jackson/jackson-core-2.16.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/Libraries/com.fasterxml.jackson/jackson-databind-2.16.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
