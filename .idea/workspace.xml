@@ -5,17 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32adeb07-eeb9-444f-b1e6-bea63a33a246" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ressources/libraries/com.fasterxml.jackson/jackson-core-2.16.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ressources/libraries/com.fasterxml.jackson/jackson-databind-2.16.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_json_20231013.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Vendor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ressources/libraries/gson-2.10.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ressources/libraries/json-20231013.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/REST-API-FruitShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/REST-API-FruitShop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Libraries/com.fasterxml.jackson/jackson-core-2.16.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Libraries/com.fasterxml.jackson/jackson-databind-2.16.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiCall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,17 +45,30 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
+    "Application.REST-API-FruitShop.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/karina/IdeaProjects/REST-API-FruitShop/src/ressources/libraries/com.fasterxml.jackson/jackson-databind-2.16.1.jar",
+    "last_opened_file_path": "/home/karina/IdeaProjects/REST-API-FruitShop/src/ressources/libraries/gson-2.10.1.jar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editing.templates"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="REST-API-FruitShop" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="20" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="REST-API-FruitShop" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

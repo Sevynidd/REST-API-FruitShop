@@ -2,61 +2,58 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.net.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class ApiCall {
-    protected List<Product> getApiInformation() {
-        URL url = null;
+
+    private final List<Product> productList = new ArrayList<>();
+    private final List<Vendor> vendorList = new ArrayList<>();
+
+    private URL url = null;
+    private HttpURLConnection conn = null;
+
+
+    protected void getApiInformation() {
+
         try {
-            url = new URI("https://api.predic8.de/shop/v2/products?start=1&limit=100").toURL();
+            url = new URI("https://api.predic8.de/shop/v2/products?limit=1000").toURL();
         } catch (URISyntaxException | MalformedURLException SyntaxEx) {
             SyntaxEx.printStackTrace();
         }
 
-        HttpURLConnection conn;
+        if (url != null) {
+            try {
+                conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("GET");
+                conn.connect();
+                int responceCode = conn.getResponseCode();
+                if (responceCode != 200) {
+                    throw new RuntimeException("HttpResponseCode: " + responceCode);
+                } else {
+                    String informationString = "";
+                    Scanner scanner = new Scanner(url.openStream());
 
-        try {
-            assert url != null;
-            conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod("GET");
-            conn.connect();
-            int responceCode = conn.getResponseCode();
-            if (responceCode != 200) {
-                throw new RuntimeException("HttpResponseCode: " + responceCode);
-            } else {
-                StringBuilder informationString = new StringBuilder();
-                Scanner scanner = new Scanner(url.openStream());
+                    while (scanner.hasNext()) {
+                        informationString += scanner.nextLine();
+                    }
 
-                while (scanner.hasNext()) {
-                    informationString.append(scanner.nextLine());
+                    scanner.close();
+
+                    JSONObject jsonObject = new JSONObject(informationString);
+
+                    System.out.println(jsonObject.query("/products"));
+
                 }
-
-                scanner.close();
-
-                ObjectMapper mapper = new ObjectMapper();
-                JsonNode jsonNode = mapper.readTree(String.valueOf(informationString)).get("products");
-
-                System.out.println(jsonNode);
-                ObjectReader reader = mapper.readerFor(new TypeReference<List<Product>>() {
-                });
-
-                List<Product> listProducts = reader.readValue(jsonNode);
-
-                listProducts.forEach(product ->
-                        System.out.println("id: " + product.id + " name: " + product.name)
-                );
-
-                return listProducts;
-
+            } catch (IOException ioex) {
+                ioex.printStackTrace();
             }
-        } catch (IOException ioex) {
-            ioex.printStackTrace();
         }
-
-        return null;
     }
 }
