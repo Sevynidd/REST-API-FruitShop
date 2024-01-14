@@ -5,15 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32adeb07-eeb9-444f-b1e6-bea63a33a246" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_json_20231013.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Vendor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ressources/libraries/gson-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ressources/libraries/json-20231013.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_2_16_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/REST-API-FruitShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/REST-API-FruitShop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiCall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiCall.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vendor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ressources/libraries/com.fasterxml.jackson/jackson-core-2.16.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ressources/libraries/com.fasterxml.jackson/jackson-databind-2.16.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ressources/libraries/gson-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ressources/libraries/json-20231013.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -45,14 +54,15 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
-    "Application.REST-API-FruitShop.executor": "Run",
+    "Application.REST-API-FruitShop.executor": "Debug",
+    "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/karina/IdeaProjects/REST-API-FruitShop/src/ressources/libraries/gson-2.10.1.jar",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "/home/karina/Dokumente/GitHub/REST-API-FruitShop",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -68,6 +78,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
