@@ -1,5 +1,4 @@
 import requests
-import json
 import sqlite3
 
 from objects.product import Product
@@ -55,6 +54,19 @@ def database_communication():
     cur.execute("CREATE TABLE IF NOT EXISTS vendor(id INTEGER NOT NULL PRIMARY KEY, name TEXT NOT NULL)")
     cur.execute("CREATE TABLE IF NOT EXISTS product(id INTEGER NOT NULL PRIMARY KEY, name TEXT NOT NULL, price REAL, "
                 "vendor_id INTEGER, FOREIGN KEY(vendor_id) REFERENCES vendor(id))")
+
+    insertVendorsQuery = "INSERT INTO vendor VALUES "
+
+    for i in range(len(vendors)):
+        insertVendorsQuery += f"({vendors[i].id}, '{vendors[i].name}')"
+        if i != (len(vendors)-1):
+            insertVendorsQuery += ", "
+    
+    cur.execute(insertVendorsQuery)
+    con.commit()
+
+    res = cur.execute("SELECT * FROM vendor")
+    print(res.fetchall())
 
 
 if __name__ == '__main__':
